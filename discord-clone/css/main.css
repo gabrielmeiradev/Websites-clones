@@ -1,0 +1,61 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    padding: 1.7rem 2rem 0rem 2rem;
+}
+
+.center-navbar a{
+    color: white;
+    text-decoration: none;
+    margin: 0 12px 0 12px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 700;
+}
+
+.button-navbar{
+    background-color: white;
+    padding: .5rem 1rem .5rem 1rem;
+    border-radius: 4rem;
+    font-family: 'Outfit', sans-serif;
+}
+
+.full-hero{
+    height: 78vh;
+    background-size: cover;
+    background-image: url('../img/bg-banner.png');
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.main h1{
+    text-transform: uppercase;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 4rem;
+    line-height: 4rem;
+    color: white;
+    text-align: center;
+    margin-top: 15vh;
+    letter-spacing: 5px;
+}
+
+.main p{
+    color: white;
+    width: 50vw;
+    font-size: 17px;
+    margin: 0;
+    text-align: center;
+    line-height: 30px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Netflix</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+
+    <!-- ANIMATE -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- WEB FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+</head>
+<script src='scripts/app-index.js'></script>
+<body class="animate__animated animate__fadeIn" onload="checkandchange()">
+    <div class="banner-main" id="b-m">
+    <div class="app-main">
+    <nav class="navbar">
+        <div class="left">
+            <img src="img/logo.svg" height="40px" width="100px" class="netflix-logo" alt="Netflix">
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="#" id="active">Início</a></li>
+                    <li><a href="#">Séries</a></li>
+                    <li><a href="#">Filmes</a></li>
+                    <li><a href="#">Bombando</a></li>
+                    <li><a href="#">Minha lista</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+        <div class="icon-area">
+            <img src="img/search.svg" class="nav-icon">
+        </div>
+        <div class="icon-area">
+            <img src="img/notification.svg" class="nav-icon">
+        </div>
+        <div class="icon-area">
+        <div id="profile-nav" onmouseover="exitareaon()" onmouseleave="exitareaoff()">
+        <a href="index.html"><img src="img/profiles/1.jpg" id="profile-icon-x" class="nav-icon rounded-icon"></a>
+        <img src="img/arrow-down.svg" id="l-s" class="rotate nav-icon rounded-icon">
+
+        <section class="exit-navbar" id="exitarea" onmouseover="exitareaon()" onmouseleave="exitareaoff()">
+    <img src="img/arrow-down.svg" class="arrow-exit">
+            <a onclick="profile(1)"><div class="profile-navbar">
+                <img id="e-i" class="rounded-icon" src="img/profiles/1.jpg"> <p id="us1">User 1</p>
+            </div></a>
+            <a onclick="profile(2)"><div class="profile-navbar">
+                <img id="e-i" class="rounded-icon" src="img/profiles/2.png"> <p id="us2">User 2</p>
+            </div></a>
+            <a onclick="profile(3)"><div class="profile-navbar">
+                <img id="e-i" class="rounded-icon" src="img/profiles/3.png"> <p id="us3">User 3</p>
+            </div></a>
+            <a onclick="profile(4)"><div class="profile-navbar">
+                <img id="e-i" class="rounded-icon" src="img/profiles/4.png"> <p id="us4">User 4</p>
+            </div></a>
+            <a onclick="profile(5)"><div class="profile-navbar">
+                <img id="e-i" class="rounded-icon" src="img/profiles/5.png"> <p id="us5">User 5</p>
+            </div></a>
+            <div class="separator"></div>
+            <div class="alt-buttons">
+                <a href="index.html"><p>Página inicial</p></a>
+                <a href="gerenciar-perfis.html"><p>Gerenciar perfis</p></a>
+            </div>
+        </section>
+    </div>
+    </div>
+    </nav>
+    <section class="featured-section">
+        <div class="featured-logo">
+            <img id="logo-featured" src="img/featured-logos/lar-doce-lar.webp">
+        </div>
+        <div class="featured-info">
+        <p id="descricao-featured">Elas parecem perigosas, mas essas criaturas incompreendídas tem um coração de ouro - e estão saindo do cativeiro para voltar para casa.</p>
+        </div>
+        <div class="featured-buttons">
+            <div class="button white-fill">
+                <img class="icon-f" src="img/play.svg"> Assistir
+            </div>
+            <div class="button">
+                <img class="icon-f" src="img/info.svg"> Mais informações
+            </div>
+        </div>
+    </section>
+    </div>
+    <section class="right-b">
+        <a onclick="mutarToggle()"><div class="volume-mute">
+            <img id="volume-icon" src="img/volume.svg">
+        </div></a>
+        <div class="age">
+            <img id="classificacao-featured" src="img/classificacao/10.png">
+        </div>
+    </section>
+    </div>
+
+    <script src="scripts/profilesettings.js"></script>
+    <script src="scripts/randomize-images.js"></script>
+</body>
+</html>

@@ -1,0 +1,289 @@
+body, html{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Archivo', sans-serif;
+}
+
+.main-banner{
+    background-image: url(background.jpg);
+	background-size: cover;
+	height: 100vh;
+}
+
+
+header{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 45px 130px; /* (top|bottom) (left|right) */
+}
+
+.arrow{
+	color: #e1211b;
+	position: absolute;
+	top: -30px;
+	left: 20px;
+	font-size: 40px;
+}
+
+.menu-content{
+	background-color: #e1211b;
+	position: absolute;
+	top: 18vh;
+	left: 100px;
+	padding: 20px 30px;
+	color: white;
+	display: flex;
+	border-radius: 10px;
+	flex-direction: column;
+}
+
+.menu-content-container{
+	display: none;
+	transition: all .3s;
+}
+
+.menu-content a{
+	text-decoration: none;
+	color: white;
+	padding: 5px;
+}
+
+.btn-header {
+	background: none;
+	border: .5px solid white;
+	border-radius: 5px;
+	cursor: pointer;
+	padding: 20px;
+	height: 5px;
+	line-height: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	color: white;
+	transition: .2s ease-in;
+}
+
+.btn-header:hover{
+	background-color: #E2E6EA;
+	color: black;
+	border: .5px solid #E2E6EA;
+}
+
+
+.menu-hamburger{
+	height: auto;
+	width: auto;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+.menu-hamburger span{
+	width: 30px;
+	background: white;
+	height: 5px;
+	border-radius: 20px;
+}
+
+.container-menu-logo{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.header-breadcrumb{
+	margin: 0 0 20px 20px;
+}
+
+
+.header-breadcrumb a, span{
+	color: white;
+	text-decoration: none;
+	transition: .3s ease-in;
+	padding: 0 3px;
+	font-size: .9rem;
+}
+
+.header-breadcrumb a:hover {
+	color: gray;
+}
+
+.in-content {
+	padding: 0 7vw;
+}
+
+.artigo-card{
+	background: #591d5b;
+	color: white;
+	padding-bottom: 20px;
+	border-bottom: 40px solid #461748;
+}
+
+.artigo-content{
+	line-height: 30px;
+}
+.artigo-in{
+	padding: 20px;
+	margin-top: 20px;
+}
+
+.artigo-bg {
+	background-image: url('https://bobsplay.com.br/media/filer_public_thumbnails/filer_public/fd/4f/fd4ff15d-48b9-4be4-a7bf-1f1b76c2b5cd/capricho-banner-1140x350.jpg__1140x350_q85_crop_subsampling-2_upscale.jpg');
+	width: 100%;
+	height: 350px;
+	background-size: cover;
+}
+
+.artigo-title{
+	font-size: 2.2rem;
+}
+
+.tip-card h2{
+	line-height: 1px;
+	font-size: 20px;
+}
+
+.tip-card{
+	display: flex;	
+	width: 50%;
+	background: #98349c;
+	cursor: pointer;
+}
+
+.tip-card:hover{
+	background: #7c2a80;
+}
+
+.col{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 20px;
+}
+
+.icon-black{
+	width: 80px;
+	height: auto;
+}
+
+
+.img-verao {
+	background-image: url('https://bobsplay.com.br/media/filer_public_thumbnails/filer_public/2d/1e/2d1e6389-0c73-425a-b9f9-633038884720/verao_bobs-play-1440x300.png__1440x300_q85_crop_subsampling-2_upscale.png');
+	width: 100%;
+	height: 300px;
+	margin: 40px 0;
+}
+
+hr{
+	border: none;
+}
+
+.divider-post{
+	border-top: 1px dashed #913894;
+	margin: 20px 0;
+}
+
+.divider-menu{
+	border-top: 1px dashed #fff;
+	margin: 5px 0;
+}
+
+.bobs-play {
+	text-align: center;
+	background-size: cover;
+	background-image: url('https://images-ext-1.discordapp.net/external/tJhLTgFLfJk3WboXZvM2PS3t5qJ41WWvx4bTMNQ9BKw/https/bobsplay.com.br/static/images/bg_chamabobs.png?width=1025&height=132');
+}
+
+.ad-images{
+	display: flex;
+	padding: 40px 50px;
+	justify-content: center;
+	gap: 30px;
+}
+
+.ad{
+	width: 540px;
+	height: 540px;
+	cursor: pointer;
+}
+
+.ad1{
+	background-image: url('https://bobsplay.com.br/media/filer_public_thumbnails/filer_public/86/ad/86ad1d66-efef-4e94-8075-f34edaa62133/verao_chamaobobs-540x540.png__540x540_q85_crop_subsampling-2_upscale.png');
+
+}
+.ad2{
+	background-image: url('https://bobsplay.com.br/media/filer_public_thumbnails/filer_public/94/89/9489bb61-9071-4162-8fe5-a7793974a7b0/bobsplay-costela-540x540.jpg__540x540_q85_crop_subsampling-2_upscale.jpg');
+}
+
+footer {
+	background: #e1211b;
+	padding: 50px 170px
+}
+
+.icon{
+	width: 25px;
+	height: auto;
+}
+
+footer{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+.left-footer{
+	display: flex;
+	flex-direction: row;	
+	gap: 40px;
+}
+
+.right-footer{
+	display: flex;
+	flex-direction: row;	
+	gap: 40px;
+}
+
+.menu-footer{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.menu-footer a {
+	color: white;
+	text-decoration: none;
+}
+
+.menu-footer a:hover{
+	color: #a11713;
+}
+
+.col-footer {
+	display: flex;
+	flex-direction: column;
+}
+
+.row{
+	display: flex;
+	flex-direction: row;
+}
+
+.social-media{
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+}
+
+.autores{
+ 	color: white;
+}
+ 

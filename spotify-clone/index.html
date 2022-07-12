@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Spotify 	&#8212; Ouça música em qualquer lugar</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <!-- css.gg -->
+    <link href='https://css.gg/css' rel='stylesheet'>
+
+    <!-- UNPKG -->
+    <link href='https://unpkg.com/css.gg/icons/all.css' rel='stylesheet'>
+
+    <!-- JSDelivr -->
+    <link href='https://cdn.jsdelivr.net/npm/css.gg/icons/all.css' rel='stylesheet'>
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo-area">
+            <img src="assets/img/logo.svg">
+        </div>
+
+        <div id="menu-full">
+            <a class="close" onclick="closemenu()">&#10005;</a>
+            <a href="#">Recursos</a>
+            <a href="#">Obtê-lo agora</a>
+            <a class="donthover">|</a>
+            <a href="#">Entrar</a>
+        </div>
+
+        <div class="menu-right">
+            <div class="menu-desktop">
+            <a href="#">Recursos</a>
+            <a href="#">Obtê-lo agora</a>
+            <a class="donthover">|</a>
+            <a href="#">Entrar</a>
+            </div>
+        </div>
+
+        <div class="menu-mobile-area" onclick="showmenu()">
+            <i class="gg-menu" id="menu"></i>
+        </div>
+    </nav>
+    <section class="banner">
+        <h1>Ouvir é tudo.</h1>
+        <p>Sua música. Sem limites.</p>
+        <div class="btn-area">
+        <a class="btn btn-banner">Obtê-lo agora</a>
+        </div>
+    </section>
+    <section class="cta-section">
+        <h1>Precisa de música agora?</h1>
+        <p>Comece a ouvir sua biblioteca agora</p>
+        <div class="btn-area">
+        <a class="btn btn-cta">Web Player.</a>
+    </div>
+    </section>
+    <footer>
+        <div class="f-1">
+            <i class="gg-facebook"></i><i class="gg-instagram"></i><i class="gg-twitter"></i>
+        </div>
+        <div class="f-2">
+            <div class="f-2l">
+                <a href="#">Início</a><a href="#">Contrate-Nos</a><a href="#">Termos e Condições</a><a href="#">Privacidade e Termos</a>
+            </div>
+            <div class="f-2r">
+                <a>&copy 2017 - 2022 Gabriel Meira. Todos os direitos reservados</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="menu.js"></script>
+</body>
+</html>

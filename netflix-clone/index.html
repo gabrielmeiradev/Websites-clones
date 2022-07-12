@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Netflix</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+
+    <!-- ANIMATE -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- WEB FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script src="scripts/index.js"></script>
+    <div class="app-main">
+    <div class="app">
+        <div class="logo">
+            <img src="img/logo.svg" height="40px" width="100px" class="netflix-logo" alt="Netflix">
+        </div>
+        <div class="container animate__animated animate__zoomIn" >
+            <h1 class="quote">Quem está assistindo?</h1>
+        <div class="profiles">
+            <div class="profiles-cards">
+                <a id="pf-1" onclick="selectUser(1)">
+                    <div class="profile-card" id="c1">
+                    <div class="p-i profile-icon-1"></div>
+                    <p class="profile-name" id="us1">User 1</p>
+                </div></a>
+                <a id="pf-2" onclick="selectUser(2)">
+                    <div class="profile-card" id="c2">
+                    <div class="p-i profile-icon-2"></div>
+                    <p class="profile-name" id="us2">User 2</p>
+                </div></a>
+                <a id="pf-3" onclick="selectUser(3)">
+                    <div class="profile-card" id="c3">
+                    <div class="p-i profile-icon-3"></div>
+                    <p class="profile-name" id="us3">User 3</p>
+                </div></a>
+                <a id="pf-4" onclick="selectUser(4)">
+                    <div class="profile-card" id="c4">
+                    <div class="p-i profile-icon-4"></div>
+                    <p class="profile-name" id="us4">User 4</p>
+                </div></a>
+                <a id="pf-5" onclick="selectUser(5)">
+                    <div class="profile-card" id="c5">
+                    <div class="p-i profile-icon-5"></div>
+                    <p class="profile-name" id="us5">User 5</p>
+                </div></a>
+            </div>
+        </div>
+
+        <a href="gerenciar-perfis.html" class="btn-entrar">Gerenciar perfis</a>
+    </div>
+    </div>
+    </div>
+</div>
+
+<script src="scripts/profilesettings.js"></script>
+</body>
+</html>

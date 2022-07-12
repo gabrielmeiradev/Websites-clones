@@ -1,0 +1,467 @@
+/* 1. General */ 
+
+::selection {
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+}
+
+.display-flex{
+  display: flex;
+}
+
+html{
+    overflow-x:hidden;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    height: 100%;
+    background-color: #131313;
+}
+
+/* 2. Profiles Page */
+
+.logo{
+    height: 5vw;
+}
+
+.profiles{
+    display: flex;
+}
+
+.profiles-cards{
+    display: flex;
+    flex-direction: row;
+}
+
+.profiles-cards a{
+    color: white;
+    text-decoration: none;
+}
+
+/* 3. Center section */
+
+.container {
+    margin-top: 7vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote{
+    font-size: 50px;
+    color: white;
+}
+
+.profile-card{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, .6);
+}
+
+.profile-card:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.profile-card a{
+    color: white;
+    text-decoration: none;
+}
+
+.profile-icon-1{
+    background: url('../img/profiles/1.jpg');
+}
+
+.profile-icon-2{
+  background: url('../img/profiles/2.png');
+}
+
+.profile-icon-3{
+  background: url('../img/profiles/3.png');
+}
+
+.profile-icon-4{
+  background: url('../img/profiles/4.png');
+}
+
+.profile-icon-5{
+  background: url('../img/profiles/5.png');
+}
+
+.p-i{
+  background-size: cover;
+  height: 130px;
+  width: 130px;
+  border-radius: 5px;
+}
+
+.p-i:hover{
+  box-shadow: 0 0 0 2px white;
+}
+
+.btn-entrar{
+    color: rgba(255, 255, 255, .6);
+    padding: 10px 20px 10px 20px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 3px;
+    border: solid rgba(255, 255, 255, .6) 1px;
+    margin: 20px 10px 0px 10px;
+}
+
+.btn-entrar:hover{
+    cursor: pointer;
+    color: white; 
+    border: solid white 1px;
+}
+
+  /* 4. App page */
+  
+  /* 5. Banner setting */
+  .banner-main{
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0px;
+    background-size: cover;
+    background-position: center;
+    
+    box-shadow: inset 0 0 7em 1em #000;
+  }
+
+ /* 6. Paddings and default color */
+  .app-main{
+    padding: 2em 4em 0 4em;
+    color: white
+  }
+
+  .netflix-logo{
+      margin: 0;
+  }
+
+  /* 7. Navbar */
+  .nav-menu{
+    display: inline-block;
+    align-items: center;
+  }
+
+  .nav-menu ul{
+    list-style: none;
+    color: white;
+    height: 100%;
+  }
+
+  .nav-menu a{
+    color: rgba(255, 255, 255, .7);
+    text-decoration: none;
+    transition: ease-in .2s;
+  }
+
+  .nav-menu a:hover{
+    color: rgba(255, 255, 255, .3);
+  }
+
+  .nav-menu li{
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .navbar{
+    display: flex;
+  }
+
+  /* 7.1 An active link from navbar */
+  #active{
+    color:rgba(255, 255, 255, 1);
+    font-weight: bolder;
+  }
+
+  /* 7.2 Left side of navbar */
+  .left{
+    display: flex;
+    align-items: center;
+  }
+
+  /* 7.3 Right side of navbar */
+
+  .right{
+    margin-left: auto;
+    float: right;
+    display: flex;
+    align-items: center;
+  }
+
+  #l-s{
+    height: 15px;
+    width: 15px;
+    margin: 0;
+  }
+
+  .nav-icon{
+    height: 30px;
+    width: 30px;
+    margin: .6em;
+    vertical-align: middle;
+  }
+
+  #profile-nav{
+    margin-left: 15px;
+  }
+  #profile-nav img{
+    margin: 0px;
+  }
+
+  .rounded-icon{
+    border-radius: 4px;
+  }
+
+  /* 8.Featured section start */
+  .featured-section{
+    margin-top: 9em;
+  }
+
+  .featured-logo img{
+    height: auto;
+    width: 35vw;
+  }
+
+  .featured-info p{
+    width: 40vw;
+    line-height: 1.5em;
+    font-size: 14pt;
+    text-shadow: 3px 1px 2px rgba(0 , 0, 0, .6);
+  }
+
+  /* 9. Buttons */
+
+  .featured-buttons{
+    display: flex;
+  }
+  
+  
+  .button{
+      background:rgba(255, 255, 255, .4);
+      margin: .3em;
+      padding: 10px 20px 10px 20px;
+      font-weight: bolder;
+      border-radius: 4px;
+  }
+  .button{
+    display: flex;
+    align-items: center;
+  }
+  
+  .button:hover{
+      cursor: pointer;
+  }
+
+  .white-fill{
+      background-color: white;
+      color: black;
+      transition: ease .2s;
+  }
+
+  .white-fill:hover{
+      background-color: #CB0000;
+      color: white;
+  }
+
+  .white-fill img{
+      fill: white;
+  }
+
+  .icon-f{
+      height: 15px;
+      width: 15px;
+      margin-right: 7px;
+      vertical-align: middle;
+  }
+
+  .right-b{
+    margin-left: auto;
+    float: right;
+    display: flex;
+    align-items: center;
+  }
+
+  .right-b img{
+      margin: 10px;
+  }
+
+  .age{
+      background-color: rgba(0 , 0, 0, .8);
+      padding-right: 3em;
+      border-left: 2px solid white;
+  }
+
+  .age img{
+      height: 30px;
+  }
+  
+  .volume-mute{
+    border: 1.5px solid white;
+    border-radius: 50px;
+    padding: 2px;
+    margin-right: 15px;
+  }
+  
+  .volume-mute img{
+      height: 20px;
+      width: 20px;
+      margin: 7px;
+  }
+
+  .volume-mute:hover{
+      cursor: pointer;
+  }
+
+  .rotate{
+    -webkit-transition: -webkit-transform 367ms cubic-bezier(.21,0,.07,1);
+    transition: -webkit-transform 367ms cubic-bezier(.21,0,.07,1);
+    -o-transition: -o-transform 367ms cubic-bezier(.21,0,.07,1);
+    -moz-transition: transform 367ms cubic-bezier(.21,0,.07,1),-moz-transform 367ms cubic-bezier(.21,0,.07,1);
+    transition: transform 367ms cubic-bezier(.21,0,.07,1);
+    transition: transform 367ms cubic-bezier(.21,0,.07,1),-webkit-transform 367ms cubic-bezier(.21,0,.07,1),-moz-transform 367ms cubic-bezier(.21,0,.07,1),-o-transform 367ms cubic-bezier(.21,0,.07,1);
+  }
+
+  .rotate:hover{
+    cursor:pointer;
+  }
+
+  .exit-navbar{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left:auto;
+    right: 80px;
+    width: 12em;
+    background: rgba(0 , 0, 0, .8);
+    margin-top: 20px;
+    border: 1px white solid;
+    transition:visibility 0.4s linear,opacity 0.4s linear;
+    opacity: 0;
+  }
+
+  .profile-navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 10px 5px 10px;
+    margin: 0px;
+  }
+
+  .profile-navbar:hover{
+    cursor: pointer;
+  }
+
+  .profile-navbar img{
+    height: 25px;
+    width: auto;
+  }
+
+  .profile-navbar{
+    font-size: 10pt;
+  }
+
+  .alt-buttons{
+    margin: 20px;
+    font-weight: bolder;
+  }
+
+  .alt-buttons a{
+    color: white;
+    text-decoration: none;
+    font-size: 10pt;
+  }
+  
+  .separator{
+    background-color: white;
+    height: 1px;
+    width: 100%;
+  }
+  #e-i{
+    margin-right: 20px !important;
+  }
+
+  .arrow-exit{
+    transform: rotate(180deg);
+    height: 1.5em;
+    width: auto;
+    position: absolute;
+    top:-.9em;
+    left: 87%;
+  }
+
+  .input{
+    background-color:#666;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    margin: 30px;
+    width: 50%;
+    height: 70px;
+    font-size: 12pt;
+    caret-color: white;
+    color: white;
+  }
+
+  .input{
+    box-shadow: 2px 2px 2px 2px rgba(0 , 0, 0, .1);
+  }
+
+  .input:focus{
+    outline: none;
+  }
+
+  /* MOBILE */ 
+
+
+@media only screen and (max-width: 700px) {
+    .nav-menu{
+        display: none;
+    }
+
+    .featured-section{
+      margin-top: 10vh;
+    }
+
+    .featured-info p{
+        width: 60vw;
+        line-height: 1.5em;
+        font-size: 12pt;
+
+    }
+
+    .featured-buttons{
+      width: 100%;
+    }
+
+    .icon-f{
+      display: none;
+    }
+
+    .right-b{
+        margin-top: 10vh;
+    }
+
+    .rotate{
+      display: none;
+    }
+
+    .featured-logo img{
+      height: auto;
+      width: 70vw;
+    }
+  }

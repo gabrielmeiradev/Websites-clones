@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Netflix</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+
+    <!-- ANIMATE -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- WEB FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-main">
+    <div class="app">
+        <div class="logo">
+            <img src="img/logo.svg" height="40px" width="100px" class="netflix-logo" alt="Netflix">
+        </div>
+        <div class="container animate__animated animate__zoomIn" >
+            <h1 class="quote">Editar perfil</h1>
+            <img src="img/profiles/1.jpg" id="profile-editing" height="100px" width="100px" class="rounded-icon">
+            <h3 id="nome-correspondente"></h3>
+            <input class="input" placeholder="Coloque o novo nome aqui..." type="text" minlength="2" maxlength="15" id="new-name" autofocus>
+            <div class="display-flex">
+             <a onclick="salvarnome()" class="btn-entrar white-fill">Salvar</a><a href="index.html" class="btn-entrar">Cancelar</a>
+            </div>
+    </div>
+    </div>
+    </div>
+</div>
+
+<script src="scripts/editar-perfil.js"></script>
+</body>
+</html>
